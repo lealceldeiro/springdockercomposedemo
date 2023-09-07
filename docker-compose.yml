@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:15.2-alpine
+    environment:
+      - POSTGRES_USER=sdc
+      - POSTGRES_DB=sdc
+      - POSTGRES_PASSWORD=sdc
+    ports:
+      - "5432:5432"
